@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" media="all" rel="Stylesheet" type="text/css" />
+  <link href="style1.css" media="all" rel="Stylesheet" type="text/css" />
+  <link href="style2.css" media="all" rel="Stylesheet" type="text/css" />
+  <title>Gastronomía Poblana</title>
+    
+</head>
+<body>
+
+<header>
+  <h1>Gastronomía Poblana</h1>
+  <nav>
+    <ul>
+      <li><a href="#bienvenida">Inicio</a></li>
+      <li><a href="#galeria">Platillos</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#timeline">TimeLine</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="bienvenida">
+  <h2>Bienvenida</h2>
+  <p>
+    La cocina poblana es un tesoro cultural de México. Sus sabores combinan tradición indígena y herencia española,
+    dando vida a platillos emblemáticos como los chiles en nogada, las cemitas y el mole poblano.
+  </p>
+</section>
+
+<section id="galeria">
+  <h2>Platillos típicos</h2>
+  <div class="galeria">
+    <div class="platillo">
+      <img src="Imagen/Nogada.png" alt="Chiles en nogada">
+      <h3>Chiles en Nogada</h3>
+      <p>Platillo emblemático con los colores de la bandera mexicana: chile poblano, nogada y granada.</p>
+    </div>
+    <div class="platillo">
+      <img src="Imagen/Cema.png" alt="Cemita poblana">
+      <h3>Cemita Poblana</h3>
+      <p>Un pan típico relleno de carne, quesillo, aguacate y chipotle, ideal para cualquier ocasión.</p>
+    </div>
+    <div class="platillo">
+      <img src="Imagen/Mole.png" alt="Mole poblano">
+      <h3>Mole Poblano</h3>
+      <p>Una salsa compleja con más de 30 ingredientes, incluyendo chocolate y chiles, servida con pollo o guajolote.</p>
+    </div>
+    <div class="platillo">
+      <video controls width="320"> <source src="Imagen/Chef.mp4" type="video/mp4" /> Tu navegador no soporta la reproducción de video HTML5. </video>
+      <!--<video src="Imagen/Chef.mp4" alt="Platillos Tradicionales">-->
+      <h3>Platillos Tradicionales</h3>
+      <p></p>
+      <div class="platillo">
+      <video controls width="320"> <source src="Imagen/Abejita.mp4" type="video/mp4" /> Tu navegador no soporta la reproducción de video HTML5. </video>
+      <!--<video src="Imagen/Chef.mp4" alt="Platillos Tradicionales">-->
+      <h3>Platillos Tradicionales</h3>
+      <p></p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <h2>Historia y origen de los platillos</h2>
+
+  <article>
+    <h3>Chiles en Nogada</h3>
+    <p>
+      Los chiles en nogada nacieron en Puebla en 1821, preparados por monjas agustinas del convento de Santa Mónica
+      para celebrar la independencia de México y honrar a Agustín de Iturbide. Sus colores —verde, blanco y rojo—
+      representan la bandera nacional.
+    </p>
+  </article>
+
+  <article>
+    <h3>Cemita Poblana</h3>
+    <p>
+      La cemita es un pan típico poblano que se popularizó en los mercados de la ciudad en el siglo XIX.
+      Su relleno tradicional incluye carne empanizada, quesillo, aguacate y chipotle, convirtiéndose en un ícono
+      de la comida callejera poblana.
+    </p>
+  </article>
+
+  <article>
+    <h3>Mole Poblano</h3>
+    <p>
+      El mole poblano es considerado uno de los platillos más representativos de México. Su origen se atribuye
+      a las monjas del convento de Santa Rosa en Puebla, quienes mezclaron más de 30 ingredientes —entre ellos
+      chiles y chocolate— para crear una salsa única que acompañaba carnes en celebraciones religiosas.
+    </p>
+  </article>
+</section>
+
+
+<section id="timeline">
+  <h2>Línea de tiempo de la gastronomía poblana</h2>
+  <div class="timeline">
+    <div class="event" onclick="toggleEvent(this)">
+      <h3>Siglo XVII – Mole Poblano</h3>
+      <p class="details">
+        El mole poblano surge en el convento de Santa Rosa, donde las monjas mezclaron chiles y chocolate
+        para crear una salsa única que acompañaba carnes en celebraciones religiosas.
+      </p>
+    </div>
+    <div class="event" onclick="toggleEvent(this)">
+      <h3>Siglo XIX – Cemita Poblana</h3>
+      <p class="details">
+        La cemita se popularizó en los mercados de Puebla como un pan relleno de carne, quesillo y chipotle,
+        convirtiéndose en un ícono de la comida callejera.
+      </p>
+    </div>
+    <div class="event" onclick="toggleEvent(this)">
+      <h3>1821 – Chiles en Nogada</h3>
+      <p class="details">
+        Creado por monjas agustinas para celebrar la independencia de México y honrar a Agustín de Iturbide,
+        con los colores de la bandera nacional.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  function toggleEvent(el){
+    el.classList.toggle("active");
+  }
+</script>
+
+
+<section id="linea-tiempo">
+  <h2>Línea de tiempo de la gastronomía poblana</h2>
+  <div class="timeline">
+    <div class="container left mole">
+      <div class="content">
+        <h3>Siglo XVII – Mole Poblano</h3>
+        <p>
+          En el convento de Santa Rosa, las monjas mezclaron chiles y chocolate para crear el mole poblano,
+          una salsa emblemática de la cocina mexicana.
+        </p>
+      </div>
+    </div>
+    <div class="container right cemita">
+      <div class="content">
+        <h3>Siglo XIX – Cemita Poblana</h3>
+        <p>
+          La cemita surge en los mercados de Puebla como un pan relleno de carne, quesillo y chipotle,
+          convirtiéndose en un ícono de la comida callejera.
+        </p>
+      </div>
+    </div>
+    <div class="container left nogada">
+      <div class="content">
+        <h3>1821 – Chiles en Nogada</h3>
+        <p>
+          Creado por monjas agustinas para celebrar la independencia de México y honrar a Agustín de Iturbide,
+          con los colores de la bandera nacional.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function mostrarTimeline() {
+    const elementos = document.querySelectorAll('.container');
+    const triggerBottom = window.innerHeight * 0.85;
+
+    elementos.forEach(el => {
+      const boxTop = el.getBoundingClientRect().top;
+      if(boxTop < triggerBottom) {
+        el.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', mostrarTimeline);
+  window.addEventListener('load', mostrarTimeline);
+</script>
+
+
+
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>¿Quieres compartir tu receta poblana favorita? Escríbenos aquí:</p>
+  <form>
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+    <div class="footer-inner">
+      <p>© 2026 Gastronomía. Sabores que nos unen.</p>
+      <div class="social" aria-label="Redes sociales">
+        <a href="Imagen/Instagram.png" aria-label="Instagram">Instagram</a>
+        <a href="Imagen/facebook.png" aria-label="Facebook">Facebook</a>
+        <a href="Imagen/Twitter.png" aria-label="Twitter">Twitter</a>
+        <a href="Imagen/whatsapp.png" aria-label="whatsapp">whatsapp</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
