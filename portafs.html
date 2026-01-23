@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project {
+      background-color: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pp</h1>
+    <p>Desarrollador Web | Diseñador UX/UI | Freelancer | Asesor Profesional </p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#Redes">Redes</a>
+    <a href="#Sistemas">Sistemas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Desarrollo web con experiencia en HTML, CSS, JavaScript y frameworks modernos y crear experiencias digitales atractivas y funcionales.
+       Asesor para tener un control y Administracion de la Empresa.
+    </p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="project">
+      <h3>Pagina Web</h3>
+      <p>Diseñé y desarrollé pagina Web moderna para un Empresa de tecnología.</p>
+    </div>
+    <div class="project">
+      <h3>Aplicación de Tareas</h3>
+      <p>App web para gestionar tareas con funcionalidades de Empresariales.</p>
+    </div>
+  </section>
+
+  <section id="Redes">
+    <h2>Gestionar la Web</h2>
+    <p>Garantizar su seguridad, funcionalidad.</p>
+  </section>
+
+  <section id="Sistemas">
+    <h2>Programador</h2>
+    <p>Sistemas de Informacion.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <label>Nombre:</label><br />
+      <input type="text" name="nombre" required /><br /><br />
+      <label>Email:</label><br />
+      <input type="email" name="email" required /><br /><br />
+      <label>Mensaje:</label><br />
+      <textarea name="mensaje" rows="5" required></textarea><br /><br />
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Pp. Todos los derechos reservados.</p>
+    <a href="index.html"><img src="Imagen/Index.ico" alt="Instagram" width="30"></a>
+  </footer>
+
+  <script>
+    function enviarFormulario(event) {
+      event.preventDefault();
+      alert("Gracias por tu mensaje. Te responderé pronto.");
+    }
+  </script>
+
+</body>
+</html>

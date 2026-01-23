@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" media="all" rel="Stylesheet" type="text/css" />
-  <link href="style1.css" media="all" rel="Stylesheet" type="text/css" />
-  <link href="style2.css" media="all" rel="Stylesheet" type="text/css" />
+   
   <title>Gastronomía Poblana</title>
     
 </head>
@@ -19,6 +18,8 @@
       <li><a href="#galeria">Platillos</a></li>
       <li><a href="#historia">Historia</a></li>
       <li><a href="#timeline">TimeLine</a></li>
+      <li><a href="#linea-tiempo">Tiempo</a></li>
+      <li><a href="/pass.html">Curriculum</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
@@ -51,13 +52,7 @@
       <p>Una salsa compleja con más de 30 ingredientes, incluyendo chocolate y chiles, servida con pollo o guajolote.</p>
     </div>
     <div class="platillo">
-      <video controls width="320"> <source src="Imagen/Chef.mp4" type="video/mp4" /> Tu navegador no soporta la reproducción de video HTML5. </video>
-      <!--<video src="Imagen/Chef.mp4" alt="Platillos Tradicionales">-->
-      <h3>Platillos Tradicionales</h3>
-      <p></p>
-      <div class="platillo">
-      <video controls width="320"> <source src="Imagen/Abejita.mp4" type="video/mp4" /> Tu navegador no soporta la reproducción de video HTML5. </video>
-      <!--<video src="Imagen/Chef.mp4" alt="Platillos Tradicionales">-->
+      <video width="640" height="360" controls> <source src="Imagen/Chef.mp4" type="video/mp4"> Tu navegador no soporta la etiqueta de video. </video>
       <h3>Platillos Tradicionales</h3>
       <p></p>
     </div>
@@ -123,9 +118,6 @@
     </div>
   </div>
 </section>
-
-
-
 <script>
   function toggleEvent(el){
     el.classList.toggle("active");
@@ -135,7 +127,7 @@
 
 <section id="linea-tiempo">
   <h2>Línea de tiempo de la gastronomía poblana</h2>
-  <div class="timeline">
+  <div class="linea-tiempo">
     <div class="container left mole">
       <div class="content">
         <h3>Siglo XVII – Mole Poblano</h3>
@@ -201,10 +193,16 @@
     <div class="footer-inner">
       <p>© 2026 Gastronomía. Sabores que nos unen.</p>
       <div class="social" aria-label="Redes sociales">
-        <a href="Imagen/Instagram.png" aria-label="Instagram">Instagram</a>
-        <a href="Imagen/facebook.png" aria-label="Facebook">Facebook</a>
-        <a href="Imagen/Twitter.png" aria-label="Twitter">Twitter</a>
-        <a href="Imagen/whatsapp.png" aria-label="whatsapp">whatsapp</a>
+        <!-- href → a dónde quieres que vaya el usuario al hacer clic.
+             src → la imagen que se mostrará.
+             alt → texto alternativo (importante para accesibilidad).
+             width → tamaño opcional. -->
+        <a href="https://www.Instagram.com"><img src="Imagen/Instagram.png" alt="Instagram" width="30"></a>
+        <a href="https://www.Facebook.com"><img src="Imagen/facebook.png" alt="Facebook" width="30"></a>
+        <a href="https://www.Twitter.com"><img src="Imagen/Twitter.png" alt="Twitter" width="30"></a>
+        <a href="https://www.whatsapp.com"><img src="Imagen/whatsapp.png" alt="whatsapp" width="30"></a>
+        <a href="https://www.tiktok.com"><img src="Imagen/tiktok1.png" alt="TikTok" width="30"></a>
+        <a href="https://www.youtube.com"><img src="Imagen/Youtube1.png" alt="Instagram" width="30"></a>
       </div>
     </div>
   </footer>
